@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+:root{
+  --main-color:#5cc23a;
+	--mainfont:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	--mywhite: #dbdbdb;
+  --c1:#FFCE00;
+  --c2:#0375B4;
+  --c3:#007849;
+  --c4:#262228;
+}
+
+body{
+  font-family: var(--mainfont);
+}
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 30%;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  color: var(--c4);
+  background-color: var(--c1);
+  padding-left: 10px;
+  box-shadow: 5px 10px 18px #262228;
+}
+
+.boxi{
+  background-color: var(--c2);
+  margin: 5%;
+  padding: 5% 0;
+}
+
+.pimage{
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0%;
+}
+
+.sidebar h1{
+  display: block;
+  margin: 10px 0;
+  color: var(--c2);
+}
+
+.sidebar h2{
+  margin: 5% 0 10px 0;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar h2{
+    margin: 7% 0;
+  }
+}
+
+.button {
+  display: block;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  background-color: var(--c1);
+  border: 2px solid var(--c4);
+  width: auto;
+  font-weight: bolder;
+  border-radius: 20px;
+}
+
+.button:hover {
+	background-color: var(--c4);
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar{
+    text-align: center;
+  }
+
+  .sidebar h1{
+    text-align: left;
+  }
+
+  .button{
+    width: 60%;
+    margin: 20px 20%;
+  }
+}
+
+
+div.content {
+  margin-left: 30%;
+  padding: 10px 16px;
+  min-height: 100vh;
+  background-color: var(--c2);
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 2px 5px 9px #262228;
+  padding: auto;
+  padding-bottom: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 5%;
+}
+
+@media screen and (max-width: 900px) {
+  .card{
+    border: none;
+    margin: 0px;
+  }
+
+  .pimage{
+    height: 200px;
+  }
+
+  div.content{
+    padding: 30px 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+/*-----------------------------------*/
+
+.centerpage{
+  background-color: var(--c1);
+  margin: 0 15%;
+  padding: 5%;
+}
+
+
+.pgimage{
+	width: 100%;
+	height: 400px;
+	margin: 3% 0;
+	border: 2px solid black;
+}
+
+@media screen and (max-width: 1024px) {
+	.pgimage{
+		height: auto;
+	}
+
+  .centerpage{
+    margin: 0%;
+  }
+
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 2px solid black;
+}
+
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #dbdbdb;
+}
+
+
+
+
+
+
